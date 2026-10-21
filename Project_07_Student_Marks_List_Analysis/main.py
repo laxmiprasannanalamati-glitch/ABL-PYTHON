@@ -1,0 +1,5 @@
+marks = list(map(int, input("Enter 5 marks: ").split()))
+print("\nMarks:", marks)
+print("Highest:", max(marks))
+print("Lowest:", min(marks))
+print("Average:", sum(marks) / len(marks))
