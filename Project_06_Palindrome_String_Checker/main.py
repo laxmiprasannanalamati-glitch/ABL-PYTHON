@@ -1,3 +1,11 @@
+# Project 06: Palindrome String Checker
+# Syllabus topics: strings, input, if-else, string slicing
+
 text = input("Enter a string: ")
-if text == text[::-1]: print(f"\n{text} is a palindrome.")
-else: print(f"\n{text} is not a palindrome.")
+
+reverse_text = text[::-1]
+
+if text == reverse_text:
+    print("\n", text, "is a palindrome.")
+else:
+    print("\n", text, "is not a palindrome.")
