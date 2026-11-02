@@ -1,25 +1,15 @@
 # Flowchart
 
-**Standard symbols:** `( )` Start/Stop, `/ /` Input/Output, `[ ]` Process, `< >` Decision.
-
 ```text
-          ( START )
-              |
-              v
-       / Input string /
-              |
-              v
-       [ Reverse string ]
-              |
-              v
-    < String = reversed string? >
-          /              \
-        Yes               No
-         |                 |
-         v                 v
- / Display Palindrome / / Display Not Palindrome /
-          \               /
-           \             /
-            v           v
-              ( STOP )
+START
+  ↓
+Input String
+  ↓
+Reverse the String
+  ↓
+Compare Original and Reversed String
+  ↓
+Display Palindrome or Not Palindrome
+  ↓
+STOP
 ```
