@@ -1,30 +1,19 @@
 # Flowchart
 
-**Standard flowchart symbols:** `( )` Start/Stop, `/ /` Input/Output, `[ ]` Process, `< >` Decision.
-
 ```text
-              ( START )
-                  |
-                  v
-             / Input name /
-                  |
-                  v
-          / Input roll number /
-                  |
-                  v
-            / Input branch /
-                  |
-                  v
-          [ Create student tuple ]
-                  |
-                  v
-            [ Unpack tuple ]
-                  |
-                  v
-       / Display student details /
-                  |
-                  v
-               ( STOP )
+START
+  ↓
+Input Name
+  ↓
+Input Roll Number
+  ↓
+Input Branch
+  ↓
+Create Tuple
+  ↓
+Unpack Tuple
+  ↓
+Display Student Details
+  ↓
+STOP
 ```
-
-This uses the standard Start/Stop, Input/Output, and Process symbols.
