@@ -1,16 +1,40 @@
 # Flowchart
 
-```mermaid
-flowchart TD
-    A([START]) --> B[/Input list/]
-    B --> C[Create empty unique list]
-    C --> D[Take next item]
-    D --> E{Item in unique list?}
-    E -- Yes --> F[Skip item]
-    E -- No --> G[Add item to unique list]
-    F --> H{More items?}
-    G --> H
-    H -- Yes --> D
-    H -- No --> I[/Display original and unique lists/]
-    I --> J([STOP])
+**Standard flowchart symbols:** `( )` Start/Stop, `/ /` Input/Output, `[ ]` Process, `< >` Decision.
+
+```text
+          ( START )
+              |
+              v
+       / Input list elements /
+              |
+              v
+      [ Create empty unique list ]
+              |
+              v
+        [ Take next item ]
+              |
+              v
+       < Item in unique list? >
+          /              \
+        Yes               No
+         |                 |
+         |                 v
+         |          [ Add item to unique ]
+         |                 |
+         +--------+--------+
+                  |
+                  v
+            < More items? >
+             /          \
+           Yes           No
+            |             |
+            v             v
+     [ Take next item ] / Display lists /
+            |             |
+            +-------------+
+                          v
+                       ( STOP )
 ```
+
+This uses the standard Start/Stop, Input/Output, Process, and Decision symbols.
