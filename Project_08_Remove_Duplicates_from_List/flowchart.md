@@ -1,40 +1,19 @@
 # Flowchart
 
-**Standard flowchart symbols:** `( )` Start/Stop, `/ /` Input/Output, `[ ]` Process, `< >` Decision.
-
 ```text
-          ( START )
-              |
-              v
-       / Input list elements /
-              |
-              v
-      [ Create empty unique list ]
-              |
-              v
-        [ Take next item ]
-              |
-              v
-       < Item in unique list? >
-          /              \
-        Yes               No
-         |                 |
-         |                 v
-         |          [ Add item to unique ]
-         |                 |
-         +--------+--------+
-                  |
-                  v
-            < More items? >
-             /          \
-           Yes           No
-            |             |
-            v             v
-     [ Take next item ] / Display lists /
-            |             |
-            +-------------+
-                          v
-                       ( STOP )
+START
+  ↓
+Input List Elements
+  ↓
+Create Empty Unique List
+  ↓
+Traverse the List Using for Loop
+  ↓
+Check Whether Item is Already Present
+  ↓
+Add New Item to Unique List
+  ↓
+Display Original and Unique Lists
+  ↓
+STOP
 ```
-
-This uses the standard Start/Stop, Input/Output, Process, and Decision symbols.
