@@ -1,53 +1,52 @@
 # Flowchart
 
+**Standard flowchart symbols:**
+- `( )` = Start / Stop
+- `/ /` = Input / Output
+- `[ ]` = Process
+- `< >` = Decision
+
 ```text
-+-------+
-| Start |
-+---+---+
-    |
-    v
-+----------------------+
-| Input name and marks |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Calculate total and  |
-| average              |
-+----------+-----------+
-           |
-           v
-+------------------+
-| average >= 90 ?  |----Yes----> Grade A
-+--------+---------+
-         No
-         v
-+------------------+
-| average >= 75 ?  |----Yes----> Grade B
-+--------+---------+
-         No
-         v
-+------------------+
-| average >= 60 ?  |----Yes----> Grade C
-+--------+---------+
-         No
-         v
-+------------------+
-| average >= 50 ?  |----Yes----> Grade D
-+--------+---------+
-         No
-         v
-      Grade F
-         |
-         v
-+----------------------+
-| Display result       |
-+----------+-----------+
-           |
-           v
-       +-------+
-       | Stop  |
-       +-------+
+              ( START )
+                  |
+                  v
+        / Input name and marks /
+                  |
+                  v
+        [ Calculate total ]
+                  |
+                  v
+        [ Calculate average ]
+                  |
+                  v
+           < Average >= 90? >
+             /           \
+          Yes             No
+           |               |
+           v               v
+      [ Grade = A ]  < Average >= 75? >
+                         /        \
+                      Yes          No
+                       |            |
+                       v            v
+                 [ Grade = B ] < Average >= 60? >
+                                  /        \
+                               Yes          No
+                                |            |
+                                v            v
+                          [ Grade = C ] < Average >= 50? >
+                                             /       \
+                                          Yes         No
+                                           |           |
+                                           v           v
+                                     [ Grade = D ] [ Grade = F ]
+                                           \           /
+                                            \         /
+                                             v       v
+                                      / Display result /
+                                             |
+                                             v
+                                          ( STOP )
 ```
 
-This can also be redrawn using standard flowchart symbols for the final PDF.
+This flowchart uses the standard Start/Stop, Input/Output, Process, and Decision symbols taught in basic programming flowcharts.
