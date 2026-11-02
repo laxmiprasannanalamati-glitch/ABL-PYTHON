@@ -1,13 +1,33 @@
 # Flowchart
 
-```mermaid
-flowchart TD
-    A([START]) --> B[/Input Student A subjects/]
-    B --> C[Create Set A]
-    C --> D[/Input Student B subjects/]
-    D --> E[Create Set B]
-    E --> F[Find Intersection]
-    F --> G[Find Union]
-    G --> H[/Display common subjects and all subjects/]
-    H --> I([STOP])
+**Standard flowchart symbols:** `( )` Start/Stop, `/ /` Input/Output, `[ ]` Process, `< >` Decision.
+
+```text
+                 ( START )
+                     |
+                     v
+          / Input Student A subjects /
+                     |
+                     v
+              [ Create Set A ]
+                     |
+                     v
+          / Input Student B subjects /
+                     |
+                     v
+              [ Create Set B ]
+                     |
+                     v
+            [ Find intersection ]
+                     |
+                     v
+                [ Find union ]
+                     |
+                     v
+      / Display common and all subjects /
+                     |
+                     v
+                  ( STOP )
 ```
+
+This uses the standard Start/Stop, Input/Output, and Process symbols.
