@@ -1,12 +1,30 @@
 # Flowchart
 
-```mermaid
-flowchart TD
-    A([START]) --> B[/Input name/]
-    B --> C[/Input roll number/]
-    C --> D[/Input branch/]
-    D --> E[Create tuple]
-    E --> F[Unpack tuple]
-    F --> G[/Display student details/]
-    G --> H([STOP])
+**Standard flowchart symbols:** `( )` Start/Stop, `/ /` Input/Output, `[ ]` Process, `< >` Decision.
+
+```text
+              ( START )
+                  |
+                  v
+             / Input name /
+                  |
+                  v
+          / Input roll number /
+                  |
+                  v
+            / Input branch /
+                  |
+                  v
+          [ Create student tuple ]
+                  |
+                  v
+            [ Unpack tuple ]
+                  |
+                  v
+       / Display student details /
+                  |
+                  v
+               ( STOP )
 ```
+
+This uses the standard Start/Stop, Input/Output, and Process symbols.
